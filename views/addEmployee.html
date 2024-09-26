@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Employee</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add Employee</h1>
+    <form action="/employees/add" method="POST">
+
+        <label>First Name: <input type="text" name="firstname" required></label><br>
+        <label>Last Name: <input type="text" name="lastname" required></label><br>
+        <label>Date of Birth: <input type="date" name="dob" required></label><br>
+        <label>Phone Numbers (comma separated): <input type="text" name="phoneNumbers" required></label><br>
+        <label>Addresses (comma separated): <input type="text" name="addresses" required></label><br>
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('print message in browser console in Add Employee Page');
+            alert('Hi , testing Client javascript render in Add Employee Page');
+        })
+    </script>
+</body>
+
+</html>
